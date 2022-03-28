@@ -17,9 +17,7 @@ namespace TelegramClient
 
                     Console.Title = me.Username;
 
-                    bot.StartReceiving();
                     var result = bot.SendTextMessageAsync(args[0], args[1]).Result;
-                    bot.StopReceiving();
                 }
                 catch (Exception ex)
                 {
